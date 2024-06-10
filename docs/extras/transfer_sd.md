@@ -24,9 +24,16 @@ You should first check whether you have a file or partition based emuMMC:
     - To do this, use [guiformat](http://ridgecrop.co.uk/index.htm?guiformat.htm) for example (Windows).
 6.  Copy the files from your PC to your new SD card and you’re done.
 
+!!!note "Note for macOS users"
+	If you perform this copy on macOS, you may find that Switch titles can no longer start and error with `Could not start the Software`, or other issues relating to the SD card. This is due to a quirk with how macOS handles FAT32 file systems. Fortunately, the fix is simple:
+
+    1. Boot into hekate
+    2. In the main menu, tap on `Tools`, then `Arch bit • RCM • Touch • Pkg1/2`
+    3. Tap on `Fix Archive Bit`
+
 -----
 ### If you are using a partition based emummc:
-    
+
 !!!warning "Space for the backup"
     You need at least 30GB of free space to be able to backup and restore the emuMMC!
 
@@ -47,3 +54,10 @@ You should first check whether you have a file or partition based emuMMC:
     - It is very important that for both of these the `SD emuMMC Raw Partition` option is enabled, otherwise you will be altering your sysMMC
       which is not what you want.
 15. Your emuMMC is now restored on the new SD card and you should be able to launch it from `Launch` -> `Atmosphere FSS0 emuMMC` in hekate.
+
+!!!note "Note for macOS users"
+	If you perform this copy on macOS, you may find that Switch titles can no longer start and error with `Could not start the Software`, or other issues relating to the SD card. This is due to a quirk with how macOS handles FAT32 file systems. Fortunately, the fix is simple:
+
+    1. Boot into hekate
+    2. In the main menu, tap on `Tools`, then `Arch bit • RCM • Touch • Pkg1/2`
+    3. Tap on `Fix Archive Bit`
